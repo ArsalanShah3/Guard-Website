@@ -134,6 +134,74 @@ main p {
     border: 1px solid #F1DB25;
 }
 
+
+section
+{
+    padding: 80px 45px 80px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img
+{
+    height: 70vh;
+    width: 45vw;
+}
+.text
+{
+    height: 60vh;
+    width: 50vw;
+    margin-left: -100px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 25px;
+}
+.text h1
+{
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    
+}
+.text h1::before
+{
+    content: "";
+    height: 7px;
+    width: 7%;
+    background-color: #F1DB25;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+    
+}
+.text p
+{
+    color: #0C0C0C;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.readmore
+{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    width: 190px;
+    background-color: #F1DB25;
+    color: white;
+    transition: 0.5s;
+}
+.readmore:hover {
+    background-color: transparent;
+    color: #F1DB25;
+    border: 1px solid #F1DB25;
+}
+
 @media (max-width:770px) and (min-width:290px) {
     nav p {
         display: none;
@@ -148,7 +216,6 @@ main p {
     }
 
 }
-
 @media (max-width:600px) and (min-width:290px) {
     main h1 {
         font-size: 40px;
@@ -177,3 +244,76 @@ main p {
     }
 
 }
+@media (max-width:1200px) and (min-width:1000px) {
+   .text
+   {
+    width: 40vw;
+    margin-left: 0px;
+    
+   }
+   .img img
+   {
+    width: 42vw;
+    height: 60vh;
+   }
+
+}
+@media (max-width:1000px) and (min-width:790px) {
+    .text
+    {
+     width: 35vw;
+     margin-left: 0px;
+     height: 50vh;
+    }
+    .text h1
+    {
+        font-size: 30px;
+    }
+    .img img
+    {
+     width: 35vw;
+     height: 50vh;
+    }
+    .img p{
+        font-size: 15px;
+    }
+ 
+ }
+ @media (max-width:790px) and (min-width:500px) {
+   section{
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+   }
+   .text
+    {
+     width: 80vw;
+     padding: 80px 45px 80px 45px;
+     margin-left: 0px;
+     height: 50vh;
+    }
+    .img img
+    {
+        width: 80vw; 
+        height: 50vh;
+    }
+ }
+ @media (max-width:499px) and (min-width:300px) {
+    section{
+     flex-direction: column-reverse;
+     flex-wrap: wrap;
+     padding: 80px 0px 80px 0px;
+    }
+    .text
+     {
+      width: 100vw;
+      padding: 80px 45px 80px 45px;
+      margin-left: 0px;
+      height: 50vh;
+     }
+     .img img
+     {
+         width: 100vw; 
+         height: 40vh;
+     }
+  }
+
