@@ -1,0 +1,179 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    padding: 15px 25px 15px 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .address,
+nav .call,
+nav .email {
+    display: flex;
+}
+
+nav .address i,
+nav .call i,
+nav .email i {
+    color: yellow;
+    font-size: 18px;
+}
+
+nav .address p,
+nav .call p,
+nav .email p {
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+/* image main  */
+.bg {
+    background-image: url(images/hero-bg.jpg);
+    background-size: cover;
+    height: 92vh;
+
+
+}
+
+/* header section */
+header {
+    padding: 15px 25px 15px 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+
+.home {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.bars {
+    font-size: 25px;
+    display: none;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 50px;
+    color: white;
+    gap: 30px;
+    position: relative;
+}
+
+main h1 {
+
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+main span {
+    color: #F1DB25;
+}
+
+main p {
+    font-size: 18px;
+
+}
+
+.button button {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px 40px 10px 40px;
+    border: none;
+}
+
+.button .read {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    margin-right: 5px;
+}
+
+.read:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.button .get {
+    background-color: #F1DB25;
+    color: white;
+    transition: 0.5s;
+}
+
+.get:hover {
+    background-color: transparent;
+    color: #F1DB25;
+    border: 1px solid #F1DB25;
+}
+
+@media (max-width:770px) and (min-width:290px) {
+    nav p {
+        display: none;
+    }
+
+    .bars {
+        display: inline-block;
+    }
+
+    .page ul {
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) and (min-width:290px) {
+    main h1 {
+        font-size: 40px;
+    }
+
+    main p {
+        text-align: center;
+    }
+
+    
+
+}
+@media (max-width:470px) and (min-width:290px) {
+   
+    .button button {
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 8px 20px 8px 20px;
+        border: none;
+    }
+    main p{
+        font-size: 17px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+
+}
