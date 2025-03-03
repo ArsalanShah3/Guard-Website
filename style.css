@@ -114,7 +114,7 @@ main p {
     background-color: white;
     color: black;
     transition: 0.5s;
-    margin-right: 5px;
+    
 }
 
 .read:hover {
@@ -314,12 +314,7 @@ section
 }
 @media (max-width:470px) and (min-width:290px) {
    
-    .button button {
-        font-size: 20px;
-        font-weight: lighter;
-        padding: 8px 15px 8px 15px;
-        border: none;
-    }
+   
     main p{
         font-size: 17px;
     }
