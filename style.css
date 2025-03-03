@@ -34,6 +34,7 @@ nav .email p {
     padding-left: 5px;
 }
 
+
 /* image main  */
 .bg {
     background-image: url(images/hero-bg.jpg);
@@ -275,6 +276,11 @@ section
     nav p {
         display: none;
     }
+    nav i:hover ~ p
+    {
+        display: inline-block;
+    }
+    
 
     .bars {
         display: inline-block;
