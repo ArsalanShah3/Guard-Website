@@ -103,17 +103,14 @@ main p {
 
 }
 
-.button button {
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 10px 40px 10px 40px;
-    border: none;
-}
-
 .button .read {
     background-color: white;
     color: black;
     transition: 0.5s;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px 40px 10px 40px;
+    border: none;
     
 }
 
@@ -127,6 +124,10 @@ main p {
     background-color: #F1DB25;
     color: white;
     transition: 0.5s;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px 40px 10px 40px;
+    border: none;
 }
 
 .get:hover {
